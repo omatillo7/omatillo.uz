@@ -443,8 +443,33 @@ main {
   font-size: 22px;
 }
 
-
 .social-item .social-link:hover { color: var(--light-gray); }
+
+/* Mobile responsive for social icons */
+@media (max-width: 579px) {
+  .social-list {
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 8px;
+  }
+  
+  .social-item .social-link {
+    font-size: 28px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 8px;
+    transition: var(--transition-1);
+  }
+  
+  .social-item .social-link:hover {
+    background: var(--jet);
+    transform: translateY(-2px);
+  }
+}
 
 
 
